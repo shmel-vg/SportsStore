@@ -26,9 +26,6 @@ namespace SportsStore.WebUI.Infrastructure
         {
             return kernel.GetAll(serviceType);
         }
-        private void AddBindings()
-        {
-            kernel.Bind<IProductRepository>().To<EFProductRepository>();
-        }
+        private void AddBindings() => kernel.Bind<IProductRepository>().To<EFProductRepository>();
     }
 }
