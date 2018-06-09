@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.Mvc.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Mvc.Extensions.Resources.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.Female">
+            <summary>
+              Looks up a localized string similar to 女.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.Male">
+            <summary>
+              Looks up a localized string similar to 男.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.No">
+            <summary>
+              Looks up a localized string similar to 否.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.Unknow">
+            <summary>
+              Looks up a localized string similar to 未知.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.Resources.Resource.Yes">
+            <summary>
+              Looks up a localized string similar to 是.
+            </summary>
+        </member>
+        <member name="T:System.Web.Mvc.HtmlHelperExtension">
+            <summary>
+            The <see cref="T:System.Web.Mvc.HtmlHelper"/> Extensions.
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Image``1(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Generate an image to the specified action name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="helper">The helper.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Image``1(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Int32,System.Int32)">
+            <summary>
+            Generate an image to the specified action name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="helper">The helper.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="routeValues">The route values.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Image``1(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Int32,System.Int32,System.String)">
+            <summary>
+            Generate an image to the specified action name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="helper">The helper.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="routeValues">The route values.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="alt">The alt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Gender(System.Web.Mvc.HtmlHelper,System.Nullable{System.Boolean})">
+            <summary>
+            获取性别的字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="gender">性别</param>
+            <returns>true:男(Male),false:女(Female),null:未知(Unknow)</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Gender(System.Web.Mvc.HtmlHelper,System.Boolean)">
+            <summary>
+            获取性别的字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="gender">性别</param>
+            <returns>true:男(Male),false:女(Female)</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Gender(System.Web.Mvc.HtmlHelper,System.Int32)">
+            <summary>
+            获取性别的字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="gender">性别</param>
+            <returns>0:未知(Unknow),1:男(Male),2:女(Female)</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Boolean(System.Web.Mvc.HtmlHelper,System.Nullable{System.Boolean})">
+            <summary>
+            获取布尔值的是否字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value">布尔值</param>
+            <returns>true:是(Yes),fale:否(No),null:未知(Unknow)</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Boolean(System.Web.Mvc.HtmlHelper,System.Boolean)">
+            <summary>
+            获取布尔值的是否字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value">布尔值</param>
+            <returns>true:是(Yes),fale:否(No)</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.DateTime(System.Web.Mvc.HtmlHelper,System.Nullable{System.DateTime})">
+            <summary>
+            获取指定可为空的DateTime类型的字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="dateTime">需要显示的DateTime?类型的值</param>
+            <returns>按照yyyy-MM-dd格式化后的日期字符串</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.DateTime(System.Web.Mvc.HtmlHelper,System.Nullable{System.DateTime},System.String)">
+            <summary>
+            获取指定可为空的DateTime类型的字符串表现形式
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="dateTime">需要显示的DateTime?类型的值</param>
+            <param name="format">日期格式化选项</param>
+            <returns>按照格式化选项格式化后的日期字符串</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Selected(System.Web.Mvc.HtmlHelper,System.Boolean,System.Boolean)">
+            <summary>
+            返回一个字符串标识select元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>selected="selected"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Selected(System.Web.Mvc.HtmlHelper,System.Decimal,System.Decimal)">
+            <summary>
+            返回一个字符串标识select元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>selected="selected"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Selected(System.Web.Mvc.HtmlHelper,System.Byte,System.Byte)">
+            <summary>
+            返回一个字符串标识select元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>selected="selected"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Selected(System.Web.Mvc.HtmlHelper,System.Int32,System.Int32)">
+            <summary>
+            返回一个字符串标识select元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>selected="selected"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Selected(System.Web.Mvc.HtmlHelper,System.String,System.String)">
+            <summary>
+            返回一个字符串标识select元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>selected="selected"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Checked(System.Web.Mvc.HtmlHelper,System.Boolean,System.Boolean)">
+            <summary>
+            返回一个字符串标识radio、checkbox元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>checked="checked"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Checked(System.Web.Mvc.HtmlHelper,System.Decimal,System.Decimal)">
+            <summary>
+            返回一个字符串标识radio、checkbox元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>checked="checked"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Checked(System.Web.Mvc.HtmlHelper,System.Byte,System.Byte)">
+            <summary>
+            返回一个字符串标识radio、checkbox元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>checked="checked"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Checked(System.Web.Mvc.HtmlHelper,System.Int32,System.Int32)">
+            <summary>
+            返回一个字符串标识radio、checkbox元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>checked="checked"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.Checked(System.Web.Mvc.HtmlHelper,System.String,System.String)">
+            <summary>
+            返回一个字符串标识radio、checkbox元素的选中项
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="value1">比较中的第一个值</param>
+            <param name="value2">比较中的第二个值</param>
+            <returns>checked="checked"</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.IsMicroMessageBrowser(System.Web.Mvc.HtmlHelper)">
+            <summary>
+            是否是微信浏览器
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <returns>是微信浏览器:true,否则:false</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.RemoteFileExists(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            获取一个值标识远程文件是否存在
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="url">远程路径</param>
+            <returns>存在:true,否则:false</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.QueryStringToJson(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            将指定的QueryString转换为Json字符串
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="queryString">QueryString</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.QueryStringToJson(System.Web.Mvc.HtmlHelper)">
+            <summary>
+            将当前Request中的QueryString转换为Json字符串
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:System.Web.Mvc.HtmlHelperExtension.QueryStringToJson(System.Web.Mvc.HtmlHelper,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            将指定的键值集合转换为Json字符串
+            </summary>
+            <param name="helper">HtmlHelper</param>
+            <param name="nvc">NameValueCollection</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="T:System.Web.Mvc.HttpBrowserCapabilitiesBaseExtensions">
+            <summary>
+            The <see cref="T:System.Web.HttpBrowserCapabilitiesBase"/> extensions.
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.HttpBrowserCapabilitiesBaseExtensions.IsMicroMessageBrowser(System.Web.HttpBrowserCapabilitiesBase)">
+            <summary>
+            Determines whether the request browser is MicroMessage browser.
+            </summary>
+            <param name="browser">The browser.</param>
+            <returns>
+              <c>true</c> if is MicroMessage browser; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:System.Web.Mvc.HttpBrowserCapabilitiesBaseExtensions.IsQQBrowser(System.Web.HttpBrowserCapabilitiesBase)">
+            <summary>
+            Determines whether the request browser is QQ browser.
+            </summary>
+            <param name="browser">The browser.</param>
+            <returns>
+              <c>true</c> if is QQ browser; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:System.Web.Mvc.HttpBrowserCapabilitiesBaseExtensions.GetUserAgent(System.Web.HttpBrowserCapabilitiesBase)">
+            <summary>
+            Gets the user agent.
+            </summary>
+            <param name="browser">The request browser.</param>
+            <returns>The request user agent string.</returns>
+        </member>
+        <member name="T:System.Web.Mvc.NewtonsoftJsonResult">
+            <summary>
+            Represents a class that is used to send json content with Newtonsoft serializer to the response.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.NewtonsoftJsonResult.ContentEncoding">
+            <summary>
+            Gets or sets the content encoding.
+            </summary>
+            <value>
+            The content encoding.
+            </value>
+        </member>
+        <member name="P:System.Web.Mvc.NewtonsoftJsonResult.ContentType">
+            <summary>
+            Gets or sets the type of the content.
+            </summary>
+            <value>
+            The type of the content.
+            </value>
+        </member>
+        <member name="P:System.Web.Mvc.NewtonsoftJsonResult.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="P:System.Web.Mvc.NewtonsoftJsonResult.SerializerSettings">
+            <summary>
+            Gets or sets the serializer settings.
+            </summary>
+            <value>
+            The serializer settings.
+            </value>
+        </member>
+        <member name="P:System.Web.Mvc.NewtonsoftJsonResult.Formatting">
+            <summary>
+            Gets or sets the formatting.
+            </summary>
+            <value>
+            The formatting.
+            </value>
+        </member>
+        <member name="M:System.Web.Mvc.NewtonsoftJsonResult.#ctor(System.Object,Newtonsoft.Json.Formatting)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.Mvc.NewtonsoftJsonResult"/> class.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="formatting">The formatting.</param>
+        </member>
+        <member name="M:System.Web.Mvc.NewtonsoftJsonResult.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.Mvc.NewtonsoftJsonResult"/> class.
+            </summary>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:System.Web.Mvc.NewtonsoftJsonResult.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.Mvc.NewtonsoftJsonResult"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.NewtonsoftJsonResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            Enables processing of the result of an action method by a custom type that inherits from the <see cref="T:System.Web.Mvc.ActionResult" /> class.
+            </summary>
+            <param name="context">The context in which the result is executed. The context information includes the controller, HTTP content, request context, and route data.</param>
+        </member>
+        <member name="T:System.Web.Mvc.ImageResult">
+            <summary>
+            Represents a class that is used to send image content to the response.
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.ImageResult.#ctor">
+            <summary>
+            Initializes a new instance of the System.Web.Mvc.ImageResult class.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.ImageResult.Image">
+            <summary>
+            Gets or sets the image content.
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.ImageResult.ImageFormat">
+            <summary>
+            Gets or sets the image format.
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.ImageResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            Enables processing of the result of an action method by a custom type that inherits
+            from the System.Web.Mvc.ActionResult class.
+            </summary>
+            <param name="context">The context within which the result is executed.</param>
+        </member>
+        <member name="T:System.Web.HttpSessionStateExtension">
+            <summary>
+            The <see cref="T:System.Web.SessionState.HttpSessionState"/> extensions.
+            </summary>
+        </member>
+        <member name="M:System.Web.HttpSessionStateExtension.SessionValue``1(System.Web.SessionState.HttpSessionState,System.String)">
+            <summary>
+            Get the vaule from <see cref="T:System.Web.SessionState.HttpSessionState"/>.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="session">The session.</param>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
