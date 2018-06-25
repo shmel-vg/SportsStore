@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SportsStore.Domain",
+    "\\SportsStore.WebUI",
+    "\\SportsStore.WebUI\\Models"
   ],
-  "SelectedNode": "\\SportsStore.UnitTests",
+  "SelectedNode": "\\SportsStore.WebUI\\Models\\ProductsListViewModel.cs",
   "PreviewInSolutionExplorer": false
 }
